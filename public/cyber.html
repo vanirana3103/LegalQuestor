@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cyber Crime Complaint Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom , #8999d1, #fff);
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0d1c51;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+      background-color: #d5daed;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #0d1c51;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #122a7c;
+    }
+  </style>
+  </style>
+</head>
+<body>
+
+  <h2>Cyber Crime Complaint Form</h2>
+  <form action="/generate-cybercrime" method="POST">
+    <label for="name">Your Name:</label>
+    <input type="text" name="name" id="name" required>
+
+    <label for="fatherName">Father's/Mother's Name:</label>
+    <input type="text" name="fatherName" id="fatherName" required>
+
+    <label for="address">Your Address:</label>
+    <textarea name="address" id="address" rows="3" required></textarea>
+
+    <label for="complaintDetails">Details of the Complaint:</label>
+    <textarea name="complaintDetails" id="complaintDetails" rows="6" required></textarea>
+
+    <label for="complaintDate">Date:</label>
+    <input type="date" name="complaintDate" id="complaintDate" required>
+
+    <button type="submit">Generate Complaint</button>
+  </form>
+
+</body>
+</html>

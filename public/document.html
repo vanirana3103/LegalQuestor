@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Select Document Type</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #d5d9eb, #fff);
+      padding: 50px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      color: #0d1c51;
+      margin-bottom: 40px;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: #d5daed;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #0d1c51;
+      margin-bottom: 10px;
+    }
+
+    .card-description {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .card a {
+      text-decoration: none;
+      background-color: #0d1c51;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-size: 15px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .card a:hover {
+      background-color: #122a7c;
+    }
+  </style>
+</head>
+<body>
+  <h1>Select Document to Generate</h1>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="card-title">Rent Agreement</div>
+      <div class="card-description">Create a rental agreement with standard legal clauses.</div>
+      <a href="/rentagreement.html">Generate Rent Agreement</a>
+    </div>
+    <div class="card">
+      <div class="card-title">Cyber Crime Complaint</div>
+      <div class="card-description">Report online threats or frauds using this pre-formatted complaint form.</div>
+      <a href="/cyber.html">Generate Cyber Complaint</a>
+    </div>
+    <div class="card">
+      <div class="card-title">FIR Draft</div>
+      <div class="card-description">Generate a First Information Report in just one click with essential details.</div>
+      <a href="fir-form.html">Generate FIR</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Bail Application</div>
+      <div class="card-description">Create a legally formatted bail request in seconds.</div>
+      <a href="/bail-form.html">Generate Bail Form</a>
+    </div>
+    <div class="card">
+      <div class="card-title">Loan Agreement</div>
+      <div class="card-description">Generate a formal loan agreement between lender and borrower.</div>
+      <a href="/loan-agreement-form.html">Generate Loan Agreement</a>
+    </div>
+    
+    <div class="card">
+      <div class="card-title">Application to SHO</div>
+      <div class="card-description">Draft a complaint or request to the local Station House Officer.</div>
+      <a href="/sho-application-form.html">Generate SHO Application</a>
+    </div>
+    
+    <div class="card">
+      <div class="card-title">Lost Document Application</div>
+      <div class="card-description">Report lost documents with this pre-written legal format.</div>
+      <a href="/lost-doc-form.html">Generate Lost Doc Form</a>
+    </div>
+    
+
+    
+
+    <div class="card">
+      <div class="card-title">Women Cell Application</div>
+      <div class="card-description">Draft a complaint to the Women Cell for harassment or abuse cases.</div>
+      <a href="/women-cell-form.html">Generate Women Cell Form</a>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Application to Magistrate</div>
+      <div class="card-description">Submit an official legal request to the Magistrate through a standard format.</div>
+      <a href="/magistrate-form.html">Generate Magistrate Form</a>
+    </div>
+  </div>
+</body>
+</html>

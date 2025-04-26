@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bail Application Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom , #8999d1, #fff);
+   
+    }
+
+    h1 {
+      text-align: center;
+      color: #0d1c51;
+      margin-bottom: 30px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #d5daed;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #0d1c51;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      margin-top: 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #122a7c;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bail Application Generator</h1>
+  <form action="/generate-bail" method="POST">
+    <label>Name:</label>
+    <input type="text" name="applicantName" required><br><br>
+  
+    <label>Father's Name:</label>
+    <input type="text" name="fatherName" required><br><br>
+  
+    <label>Address:</label>
+    <input type="text" name="address" required><br><br>
+  
+    <label>City:</label>
+    <input type="text" name="city" required><br><br>
+  
+    <label>Court Name:</label>
+    <input type="text" name="courtName" required><br><br>
+  
+    <label>Case Number:</label>
+    <input type="text" name="caseNumber" required><br><br>
+  
+    <label>Reason for Bail (optional):</label>
+    <textarea name="reason"></textarea><br><br>
+  
+    <label>Date:</label>
+    <input type="date" name="date" required><br><br>
+  
+    <button type="submit">Generate Bail Application</button>
+  </form>
+  
+</body>
+</html>

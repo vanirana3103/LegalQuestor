@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FIR Draft Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom , #8999d1, #fff);
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0d1c51;
+    }
+
+    form {
+      max-width: 600px;
+      margin: auto;
+      background-color: #d5daed;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #0d1c51;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #122a7c;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>FIR Draft Generator</h1>
+  <form action="http://localhost:3000/generate-fir" method="POST">
+
+    <label>Name: <input type="text" name="name" required></label><br>
+    <label>Father's Name: <input type="text" name="fatherName" required></label><br>
+    <label>Address: <input type="text" name="address" required></label><br>
+    <label>Police Station Name: <input type="text" name="policeStationName" required></label><br>
+    <label>Police Station Address: <input type="text" name="policeStationAddress" required></label><br>
+    <label>Date of Incident: <input type="date" name="incidentDate" required></label><br>
+    <label>Incident Details: <textarea name="incidentDetails" required></textarea></label><br>
+    <button type="submit">Generate FIR</button>
+  </form>
+  
+
+</body>
+</html>
