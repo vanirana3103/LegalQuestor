@@ -5,7 +5,6 @@ const path = require('path');
 const { Document, Packer, Paragraph, TextRun } = require("docx");
 
 const app = express();
-const port = 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
@@ -232,6 +231,8 @@ app.post('/generate-cybercrime', async (req, res) => {
   res.download(filename);
 });
 
+const port = process.env.PORT || 3000;
+
 app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
+  console.log(`Server is running on port ${port}`);
 });
